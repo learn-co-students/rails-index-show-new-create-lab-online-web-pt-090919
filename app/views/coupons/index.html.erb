@@ -1,0 +1,15 @@
+<div>
+<!-- store -->
+/
+<% @coupons.each do |coupon| %>
+  <%=link_to coupon.store, coupon_path(coupon).strip%>|  
+<% end %>
+/<br>
+
+<!-- coupon code -->
+/
+<% @coupons.each do |coupon| %>
+  <%=link_to coupon.coupon_code, coupon_path(coupon).strip%>|  
+<% end %>
+/
+</div>
